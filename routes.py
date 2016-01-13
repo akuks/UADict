@@ -30,7 +30,7 @@ def signup():
 				           form.email.data, form.password.data)
 			db.session.add(newUser)
 			db.session.commit()
-			return "Sucess"
+			return "Success"
 	
 	elif request.method == "GET":
 		return render_template("signup.html", form=form)
